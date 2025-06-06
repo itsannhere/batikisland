@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li{
+    text-align: left;
+    list-style: none;
+}
+
+ul li input[type="text"]{
+    width: 380px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+ul li input[type="text"].login {
+    width: 330px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+hr{
+    border-color: rgba(56, 25, 4, 0.3);
+} /*garis umum*/ 
+
+button{
+    margin-left: 280px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: rgb(255, 210, 232);
+} /*umum*/
+
+
+h3{
+    text-align: center;
+    font-size: 25px;
+} /*umum*/
+
+/* form input{
+    margin-top: 10px;
+    display: block;
+    width: 15%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+} umum */
+
+p.p_login{
+    text-align: left;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a.p_login{
+    text-align: left;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img_home{
+    width: 20%;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.img_home img{
+    width: 100%;
+    padding: 45px;
+}
+
+#img_about{
+    float: left;
+    width: 500px;
+    margin-left: 150px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.article_main_about p{
+    width: 45%;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 700px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img.img_batikclass{
+    width: 400px;
+    display: inline;
+    padding: 20px;
+}
+
+img.img_batikshop{
+    float: left;
+    width: 500px;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    padding: 0;
+}
+
+.batikclass{
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+ul li p.p_batikclass{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+}
+
+.add_project{
+    margin-left: 450px;
+    font-size: 15px;
+    padding: 10px;
+    display: inline-block;
+}
+
+h2.profile{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 345px;
+}
+
+.username{
+    display: inline;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
+    color: grey;
+}
+
+#usn_login{
+    display: inline;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgb(0, 139, 225);
+}
+
+#img_profile{
+    float: left;
+    margin-top: 40px;
+    width: 300px;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+._profile{
+    font-size: 17px;
+    text-align: left;
+    display: inline-block;
+    margin-right: 300px;
+    margin-bottom: 0;
+    padding: 10px;
+    color: grey;
+}
+
+p.address{
+    text-align: left;
+    font-size: 12px;
+    margin-left: 345px;
+} /*checkout*/
+
+a#usn{
+    text-decoration: none;
+    font-size: 10px;
+    color: rgb(0, 139, 225);
+}
+
+div.status{
+    text-decoration: none;
+}
+
+.detail{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+} /*product*/
+
+.button_{
+    text-align: center;
+    margin-left: 630px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 100px;
+    background-color: rgb(255, 210, 232);
+}
+
+img.imgdetailprocut{
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.top{
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+} /*checkout*/
+
+.h3_checkout{
+    text-align: left;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 300px;
+}
+
+.co{
+    padding: 100px;
+    font-size: 15px;
+}
+
+.space{
+    padding: 160px;
+}
+
+.detail_co{
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+}
+
+img.img_co{
+    width: 120px;
+    margin-top: 10px;
+    padding: 1px;
+    box-sizing: border-box;
+    display: inline;
+}
+
+.space2{
+    padding: 300px;
+}
+
+.space3{
+    padding: 380px;
+}
+
+button.button_co{
+    text-align: left;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 100px;
+    background-color: rgb(255, 210, 232);
+}
+
+.end{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.end span{
+    margin-left: 1210px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+button.button_center{
+    text-align: center;
+    margin-left: 0;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 100px;
+    background-color: rgb(255, 210, 232);
+}
+
+button[type="button"]:hover{
+    background-color: rgb(255, 234, 197);
+    color: rgb(0, 0, 0);
+}
+
+video{
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.body_create{
+    background-image: url(Muriwai\ Rangeland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.login{
+    background-color: white;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    padding: 30px;
+    margin-left: 850px;
+    margin-right: 220px;
+    margin-top: 70px;
+}
+
+main.createaccount{
+    background-color: white;
+    text-align: left;
+    border: none;
+    border-radius: 6px;
+    padding: 30px;
+    margin-left: 650px;
+    margin-right: 220px;
+    margin-top: 70px;
+    text-decoration: none;
+}
+
+h1.createaccount{
+    text-align: center;
+}
+
+a#createaccount{
+    text-decoration: none;
+}
+
+.footer_information div span{
+    display: flex;
+    padding-left: 300px;
+}
+
+button{
+    margin-left: 280px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: rgb(255, 210, 232);
+}
+
+u{
+    color: rgb(0, 139, 225);
+}
+
+main.login{
+    text-align: left;
+}
+
+h1.login{
+    text-align: center;
+}
+
+.product{
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.productimage{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+div.description-product{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 10px;
+    height: 420px;
+}
+
+.description-product h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.description-product p {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn{
+    padding: 10px 20px;
+    color: white;
+    background-color: #28a745;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+button.add{
+    border: 2px solid rgb(128, 128, 128, 0.3);
+}
+
+button.btkclass{
+    width: 300px;
+    border: 2px solid rgb(128, 128, 128, 0.3);
+}
+
+.quantity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: left;
+    overflow: hidden;
+}
+
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.quantity-selector .qty {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.quantity-selector .qty:last-child {
+    border-right: none;
+}
+
+.quantity-selector .qty:active {
+    background-color: #f0f0f0;
+}
+
+.shipping-address {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+thead{
+    border: none;
+}
+
+.table-bordered {
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.table-bordered th,
+.table-bordered td {
+    text-align: right;
+    border: none;
+}
+
+.table-bordered th {
+    width: 200px;
+    border: none;
+}
+
+.total {
+    background-color: #f8f8f8;
+    border-top: 2px solid #ddd;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.shipping-option {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffecd1;
+}
+
+.shipping-option b {
+    font-weight: bold;
+}
+
+#checkout-table, th, td {
+    border: none;
+}
+
+/* Grand total section - Remove borders or any extra borders */
+.total {
+    border: none;
+    padding: 10px 0;
+}
+
+/* To remove button border if desired */
+.btn {
+    border: none;
+}
+
+button#button_center{
+    text-align: center;
+    margin-left: 0;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 100px;
+    background-color: rgb(255, 210, 232);
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(255, 234, 197);
+    color: rgb(0, 0, 0);
+}

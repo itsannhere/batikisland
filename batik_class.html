@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batik_Class</title>
+    <link rel="stylesheet" href="web.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-white navbar-white">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="logo">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="batik_class.html">Batik Class</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="fabrics.html">Fabrics</a></li>
+                          <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+                          <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <br><hr>
+
+    <main class="batikclass">
+        <section>
+            <img src="display-batik canting.png" alt="batikclass" class="img_batikclass">
+            <img src="display-hasil batik.png" alt="batikclass" class="img_batikclass">
+            
+            <p> 
+                Batik is a traditional dyeing method that utilizes the wax-resist technique to color either
+                the entire fabric or specific parts of it. The process involves applying wax to the fabric
+                in the form of dots or lines using a tool called a 'Canting,' or using a copper stamp known 
+                as a 'Cap' to imprint wax onto the fabric. The areas without wax are dyed, and then the wax 
+                is partially removed using hot water, allowing for multiple rounds of dyeing. This intricate method 
+                requires precision and care, as the balance between applying wax and dye is essential to achieving the desired visual outcome. <br><br>
+
+                Due to the detailed nature of the batik process, it is both time-consuming and demands a high level of focus to create the final artistic effect.
+            </p>
+        </section>
+
+        <section>
+            <p>
+                In the Batik Painting Healing Class, you'll be guided through the fundamental techniques of batik painting, including 
+                how to use the traditional "Canting" tool. 
+                The relaxed environment encourages small talk and creative work to help clear your mind from any cluttered thoughts.
+                <br><br>
+    
+                <article>
+                    <h3>Why join us?</h3><br><br>
+                    Design and draw your very own batik piece with the guidance of professional tutors. You'll take home your custom-made batik as a special keepsake!
+                    Complete the course and receive an official certificate—perfect for adding to your personal or professional portfolio.
+                    
+                    <br><br>
+                    <img src="Stamp-class.png" alt="batik" class="img_batikshop">
+                    <form class="batikclass">
+                        <ul>
+                            <li>
+                                <p class="p_batikclass">
+                                    Location:
+                                    <br>XYZ Village, Java, Indonesia
+                                </p>
+                            </li>
+        
+                            <li>
+                                <p class="p_batikclass">
+                                    Tuition(including materials, food and drink):
+                                    <br>IDR 250.000,00
+                                </p>
+                            </li>
+        
+                            <li>
+                                <p class="p_batikclass">
+                                    Age limit:
+                                    <br>15 years old and over
+                                </p>
+                            </li>
+        
+                            <li>
+                                <p class="p_batikclass">
+                                    Classtime:
+                                    <br>1 class 10 person
+                                    <br>Maximal 4 class
+                                    <br>1 Indonesian instructor
+                                    <br>*Class in English
+                                </p>
+                            </li>
+                            <br><br><br><br><br>
+                    </ul>
+                    </form>
+
+                    <button type="button" class="btn btn-outline-black add">Book now</button>
+                    <br>
+                </article>
+            </p>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll(".btn-outline-black.add").forEach((button) => {
+            button.addEventListener("click", function (e) {
+                const productName = "Batik Class";
+                const productPrice = 250000;
+                const productQuantity = 1;  // Set the quantity to 1 by default
+
+                // Get cart data from Local Storage (if exists)
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                // Check if the product is already in the cart
+                const productIndex = cart.findIndex(item => item.name === productName);
+
+                if (productIndex > -1) {
+                    // Product already exists in the cart, just update its quantity and total
+                    cart[productIndex].quantity += productQuantity;
+                    cart[productIndex].total = cart[productIndex].quantity * cart[productIndex].price;
+                } else {
+                    // Add the new product to the cart
+                    cart.push({
+                        name: productName,
+                        price: productPrice,
+                        quantity: productQuantity,
+                        total: productPrice * productQuantity
+                    });
+                }
+
+                // Save the updated cart to Local Storage
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                // Redirect the user to the payment page after the item is added
+                window.location.href = "book_class_form.html";
+            });
+        });
+    </script>
+
+    <br><br>
+    
+    <footer>
+        <div class="row">
+            <div class="col" style="margin-left: 50px;">
+              &copy;2024 Batik Island. All Right Reserved
+              <br>xyvbatikvillage@gmail.com
+            </div>
+            <div class="col-md-auto">
+              
+            </div>
+            <div class="col col-lg-2">
+              <img src="Instagram_app_icon-removebg-preview.png" alt="Instagram" width="50px">
+              <img src="Grey_Pinterest_Icon-removebg-preview.png" alt="Instagram" width="40px">
+              <img src="TikTok_app_icon-removebg-preview.png" alt="Instagram" width="40px">
+            </div>
+        </div>
+        <br><br>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
